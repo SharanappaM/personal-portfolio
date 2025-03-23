@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        .drawer {
+            transform: translateX(-100%);
+        }
+
+        .drawer.open {
+            transform: translateX(0);
+        }
+
+
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(20%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-right {
+            animation: slideInFromRight 1s ease-out;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <div class="flex flex-col sm:flex-row lg:h-screen">
+
+        <div class="text-center m-3 w-full sm:w-1/4 flex flex-col items-center border border-slate-400 rounded-3xl p-6">
+            <h1 class="text-violet-500 text-4xl font-bold">Sharanappa</h1>
+            <p class="text-gray-400 text-lg">Front End Developer</p>
+
+            <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Profile"
+                class="h-48 w-48 rounded-full mt-4 mx-auto">
+
+            <p class="text-gray-400 text-lg mt-4">hbdsharanappa52@gmail.com</p>
+            <p class="text-gray-400 text-lg">Nagavara, Karnataka, IN</p>
+
+            <div class="flex gap-4 mt-6 justify-center">
+                <a href="#"
+                    class="w-14 h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-700">
+                    <i class="fa-brands fa-linkedin text-2xl text-gray-400"></i>
+                </a>
+                <a href="#"
+                    class="w-14 h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-700">
+                    <i class="fa-brands fa-github text-2xl text-gray-400"></i>
+                </a>
+                <a href="#"
+                    class="w-14 h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-700">
+                    <i class="fa-brands fa-twitter text-2xl text-gray-400"></i>
+                </a>
+                <a href="#"
+                    class="w-14 h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:bg-gray-700">
+                    <i class="fa-brands fa-whatsapp text-2xl text-gray-400"></i>
+                </a>
+            </div>
+
+            <div class="flex gap-4 mt-6 justify-center">
+                <button class="bg-violet-500 px-6 py-3 rounded-lg text-black font-bold text-lg hover:bg-violet-500">
+                    Hire Me!
+                </button>
+                <button class="bg-violet-500 px-6 py-3 rounded-lg text-black font-bold text-lg hover:bg-violet-500">
+                    Resume
+                </button>
+            </div>
+
+            <p class="text-gray-500 text-sm mt-8">© 2025 Sharanappa. All rights reserved.</p>
+        </div>
+
+        <div class="flex-1 lg:pl-14 pt-14 lg:pr-32 overflow-y-auto m-5 lg:m-0 ">
+            <div class="introduction-section">
+                <div class="flex justify-between items-center w-44 px-5 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-house text-sm"></i>
+                    <h1 class="text-sm">INTRODUCTION</h1>
+                </div>
+
+                <h2 class="text-6xl font-semibold mt-10 tracking-wide">Hello there! I'm <span
+                        class="text-violet-500">Sharanappa</span>, Front
+                    End Developer</h2>
+
+                <p class="text-gray-400 mt-10 text-lg">I design and code beautifully simple things and I love what I do.
+                    Just
+                    simple
+                    like that!</p>
+
+                <div class="flex justify-between sm:w-1/2 mt-10">
+                    <div>
+                        <h1 class="text-7xl  text-violet-500">1.5+</h1>
+                        <h1 class="uppercase text-lg w-20">years of experience </h1>
+                    </div>
+                    <div>
+                        <h1 class="text-7xl text-violet-500">18+</h1>
+                        <h1 class="uppercase text-lg w-20">Technologies So Far </h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="about-section" class="mt-40 ">
+
+                <div class="flex justify-between items-center w-24 px-5 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-house text-sm"></i>
+                    <h1 class="text-sm">About</h1>
+                </div>
+
+                <h2 class="text-5xl font-semibold mt-10 tracking-wide">Every great design begin with an even <span
+                        class="text-violet-500">better story</span></h2>
+
+                <p class="text-gray-400 mt-10 text-lg">I am Sharanappa, a junior Software Engineer. I have completed
+                    multiple projects independently, showcasing my ability to create interactive and user-friendly web
+                    applications using React. I am eager to contribute my skills and continue learning in a
+                    collaborative team environment. Let's work together to bring your ideas to life!</p>
+
+                <div class="flex justify-between sm:w-1/2 mt-10">
+                    <div>
+                        <h1 class="text-7xl text-violet-500">1.5+</h1>
+                        <h1 class="uppercase text-lg w-20">years of experience </h1>
+                    </div>
+                    <div>
+                        <h1 class="text-7xl text-violet-500">18+</h1>
+                        <h1 class="uppercase text-lg w-20">Technologies So Far </h1>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div id="experience-section" class="mt-28">
+
+                <div class="flex justify-between items-center w-32 px-5 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-briefcase text-sm"></i>
+                    <h1 class="text-sm">Experience</h1>
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28  sm:mt-12">
+                    <h2 class="text-5xl font-semibold mt-10 tracking-wide">Work <span
+                            class="text-violet-500">Experience</span></h2>
+
+                    <div class="w-full  max-w-lg p-6 border-2 mt-10 border-amber-50 text-white rounded-3xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-briefcase text-violet-500 text-3xl"></i>
+                            <div>
+                                <h2 class="text-2xl font-bold">Junior Software Engineer</h2>
+                                <p class="text-gray-400">Travercel Technologies Pvt Ltd · Full-time</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-2">
+                            <i class="fa-solid fa-calendar-alt text-violet-500"></i>
+                            Jun 2023 - Present · 1 yr 10 mos
+                        </p>
+                        <p class="text-gray-400 mb-4">
+                            <i class="fa-solid fa-location-dot text-violet-500"></i>
+                            Bengaluru, Karnataka, India · On-site
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div id="education-section" class="mt-28">
+
+                <div class="flex justify-between items-center w-32 px-5 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-graduation-cap text-sm"></i>
+                    <h1 class="text-sm">Education</h1>
+                </div>
+
+
+                <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28 mt-8 sm:mt-12">
+                    <div class="w-full max-w-lg p-6 border-2 border-amber-50 text-white rounded-3xl ">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-graduation-cap text-violet-500 text-3xl"></i>
+                            <div>
+                                <h2 class="text-2xl font-bold">Bachelor of Engineering - BE</h2>
+                                <p class="text-gray-400">Visvesvaraya Technological University · Full-time</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-2">
+                            <i class="fa-solid fa-calendar-alt text-violet-500"></i>
+                            Jan 2019 - Aug 2022
+                        </p>
+                        <p class="text-gray-400 mb-4">
+                            <i class="fa-solid fa-location-dot text-violet-500"></i>
+                            Belagavi, Karnataka, India
+                        </p>
+                    </div>
+
+                    <h2 class="text-5xl font-semibold mt-10 tracking-wide">Higher <span
+                            class="text-violet-500">Education</span></h2>
+                </div>
+
+            </div>
+
+
+            <div id="courses-section" class="mt-10 sm:mt-20 lg:mt-40 ">
+
+                <div class="flex justify-between items-center w-28 px-6 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-laptop-code text-sm"></i>
+                    <h1 class="text-sm">courses</h1>
+                </div>
+
+                <h2 class="text-4xl sm:text-5xl font-semibold mt-10 tracking-wide">Certification <span
+                        class="text-violet-500">courses</span></h2>
+
+                <div class="flex flex-col sm:flex-row sm:gap-8 mt-8 sm:mt-12">
+
+                    <div
+                        class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl mb-6 sm:mb-0">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-certificate text-yellow-400 text-3xl"></i>
+                            <div>
+                                <h2 class="text-2xl font-bold">Full Stack Development</h2>
+                                <p class="text-gray-400">JSpiders - Training & Development Center · Internship</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-2">
+                            <i class="fa-solid fa-calendar-alt text-yellow-400"></i>
+                            Sep 2022 - Jul 2023 · 11 mos
+                        </p>
+                        <p class="text-gray-400 mb-4">
+                            <i class="fa-solid fa-location-dot text-yellow-400"></i>
+                            Bengaluru, Karnataka, India · Remote
+                        </p>
+                        <p class="text-gray-400">
+                            <i class="fa-solid fa-laptop-code text-yellow-400"></i>
+                            Java,ReactJs,SQL and other skills
+                        </p>
+                    </div>
+
+
+                    <div class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl">
+                        <div class="flex items-center gap-4 mb-4">
+                            <i class="fa-solid fa-drafting-compass text-blue-400 text-3xl"></i>
+                            <div>
+                                <h2 class="text-2xl font-bold">CAD Designer</h2>
+                                <p class="text-gray-400">GOVERNMENT TOOL ROOM AND TRAINING CENTRE · Internship</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 mb-2">
+                            <i class="fa-solid fa-calendar-alt text-blue-400"></i>
+                            Aug 2020 - Oct 2020 · 3 mos
+                        </p>
+                        <p class="text-gray-400 ">
+                            <i class="fa-solid fa-location-dot text-blue-400"></i>
+                            Karnataka, India · On-site
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="services-section" class="mt-10 sm:mt-20 lg:mt-40">
+                <div class="flex justify-between items-center w-28 px-6 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-laptop-code text-sm"></i>
+                    <h1 class="text-sm">Serivces</h1>
+                </div>
+
+                <h2 class="text-4xl sm:text-5xl font-semibold mt-10 tracking-wide">My <span
+                        class="text-violet-500">Services</span></h2>
+
+                <div class="flex flex-col sm:flex-row sm:gap-8 mt-8 sm:mt-12">
+
+                    <div class="grid md:grid-cols-2 gap-8">
+
+                        <div
+                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
+                            <!-- <i class="fas fa-code text-6xl text-violet-500 mr-6"></i> -->
+                            <img src="./img/Web4.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                            <div class="group w-full ml-3">
+                                <h2 class="text-xl font-bold mb-4">Web Development</h2>
+                                <p class="text-gray-400">Creating responsive and interactive websites using HTML,
+                                    CSS, JavaScript, and React.js. Focus on modern UI/UX and cross-browser
+                                    compatibility.</p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
+                            <!-- <i class="fas fa-mobile-alt text-6xl text-blue-400 mr-6"></i> -->
+                            <img src="./img/MobileDev.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                            <div class="group w-full ml-3">
+                                <h2 class="text-xl font-bold mb-4">Mobile App Development</h2>
+                                <p class="text-gray-400">Building user-friendly cross-platform mobile applications
+                                    using React Native. Delivering seamless experiences on both iOS and Android.</p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
+                            <!-- <i class="fas fa-server text-6xl text-yellow-400 mr-6"></i> -->
+                            <img src="./img/API.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                            <div class="group w-full ml-3">
+                                <h2 class="text-xl font-bold mb-4">Backend Development</h2>
+                                <p class="text-gray-400">Developing robust server-side applications using Node.js
+                                    and Java. Ensuring scalability, security, and optimized database management.</p>
+                            </div>
+                        </div>
+
+
+                        <div
+                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
+                            <!-- <i class="fas fa-paint-brush text-6xl text-pink-400 mr-6"></i> -->
+                            <img src="./img/DesignDev.png" alt="React Logo" class="h-24 w-24 object-contain">
+                            <div class="group w-full ml-3">
+                                <h2 class="text-xl font-bold mb-4">Branding & Marketing Design</h2>
+                                <p class="text-gray-400">Designing engaging visuals using Canva and Figma for
+                                    branding, marketing campaigns, and social media promotion. Enhancing brand
+                                    identity through creative content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skils-section" class="mt-10 sm:mt-20 lg:mt-40 ">
+
+                <div class="flex justify-between items-center w-28 px-6 py-1 border-2 border-white rounded-full gap-2">
+                    <i class="fa-solid fa-laptop-code text-sm"></i>
+                    <h1 class="text-sm">Skills</h1>
+                </div>
+
+                <h2 class="text-4xl sm:text-5xl font-semibold mt-10 tracking-wide">My <span
+                        class="text-violet-500">Advantages</span></h2>
+
+                <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/html-logo.png" alt="HTML Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">HTML</p>
+                    </div>
+
+
+
+
+
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/css-logo.png" alt="CSS Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">CSS</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Tailwind CSS.png" alt="CSS Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Tailwind</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Bootstrap.png" alt="CSS Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Bootstrap</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/NewJavaScript-logo.png" alt="JavaScript Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">JavaScript</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/react-logo.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">ReactJS</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/material-ui-logo.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Material UI</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Node.js.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Node Js</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Redux.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Redux</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/TypeScript.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">TypeScript</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/java-logo.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Java</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/mysql-logo.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">MySQL</p>
+                    </div>
+                </div>
+
+
+                <!-- <h2 class="text-4xl sm:text-5xl font-semibold mt-10 tracking-wide">My expertise, powered by
+                    essential<span class="text-violet-500"> Tools</span></h2> -->
+                <h2 class="text-4xl sm:text-5xl font-semibold mt-10 tracking-wide">Essential
+                    <span class="text-violet-500"> Tools</span>
+                </h2>
+
+                <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/vs-code-logo.png" alt="VS Code"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">VS Cose</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Vite.js.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Vite</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/NPM.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">NPM</p>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/Postman.png" alt="Postman"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Postman</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/IntelliJ IDEA.png" alt="CSS Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">IntelliJ</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/atlassian-logo.png" alt="CSS Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Atlassian</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/icons8-github-512.png" alt="GitHub"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">GitHub</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/BitBucket.png" alt="Bitbucket"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Bitbucket</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/icons8-canva-1000.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Canva</p>
+                    </div>
+                    <div class="flex flex-col items-center group">
+                        <img src="./img/figma-logo.png" alt="React Logo"
+                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                        <p class="mt-2 text-lg font-semibold">Figma</p>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="p-5 fixed right-0 mt-10 flex-col items-center border-2 rounded-full mr-5 flex md:hidden"
+            id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+        <div
+            class="w-16 bg-gray-900 p-6 fixed right-0 min-h-[50%] mt-36  flex-col items-center shadow-xl rounded-full mr-16 hidden md:flex">
+
+            <ul class="space-y-8 text-2xl text-violet-500">
+                <li><i class="fa-solid fa-house cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-user cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-file cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-cogs cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-snowflake cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-address-card cursor-pointer hover:text-violet-500"></i></li>
+                <li><i class="fa-solid fa-envelope cursor-pointer hover:text-violet-500"></i></li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+
+    <div id="drawer" class="drawer fixed top-0 left-0 h-full bg-gray-800 text-white w-64 z-50">
+        <div class="p-5">
+            <ul class="space-y-8 text-2xl text-violet-500">
+                <li><i class="fa-solid fa-house cursor-pointer hover:text-violet-500"></i> Home</li>
+                <li><i class="fa-solid fa-user cursor-pointer hover:text-violet-500"></i> <a href="#about-section">About</a></li>
+                <li><i class="fa-solid fa-file cursor-pointer hover:text-violet-500"></i> Documents</li>
+                <li><i class="fa-solid fa-cogs cursor-pointer hover:text-violet-500"></i> Settings</li>
+                <li><i class="fa-solid fa-snowflake cursor-pointer hover:text-violet-500"></i> Snowflakes</li>
+                <li><i class="fa-solid fa-address-card cursor-pointer hover:text-violet-500"></i> Contact</li>
+                <li><i class="fa-solid fa-envelope cursor-pointer hover:text-violet-500"></i> Messages</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+
+const menuToggle = document.getElementById("menuToggle");
+        const drawer = document.getElementById("drawer");
+        const menuItems = document.querySelectorAll("#drawer ul li");
+
+        // Toggle the drawer when clicking the menu button
+        menuToggle.addEventListener("click", () => {
+            drawer.classList.toggle("open");
+        });
+
+        // Close the drawer when clicking on any menu item
+        menuItems.forEach(item => {
+            item.addEventListener("click", () => {
+                drawer.classList.remove("open");
+            });
+        });
+
+        
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Define an array of sections with custom animations
+            const sections = [
+                { id: 'services-section', animation: 'slide-in-right' },
+                { id: 'skils-section', animation: 'slide-in-right' },
+                { id: 'courses-section', animation: 'slide-in-right' },
+                { id: 'education-section', animation: 'slide-in-right' },
+                { id: 'experience-section', animation: 'slide-in-right' },
+                { id: 'about-section', animation: 'slide-in-right' },
+                { id: 'introduction-section', animation: 'slide-in-right' },
+            ];
+
+            // Create an intersection observer
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add the animation class from the section's data
+                        entry.target.classList.add(entry.target.dataset.animation);
+                        observer.unobserve(entry.target); // Stop observing once animation is applied
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the section is visible in the viewport
+
+            // Observe each section with its respective animation
+            sections.forEach(({ id, animation }) => {
+                const section = document.getElementById(id);
+                if (section) {
+                    section.dataset.animation = animation; // Store the animation class in the data attribute
+                    observer.observe(section);
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
