@@ -18,7 +18,7 @@
 
 
 
-        /* @keyframes rotate {
+        @keyframes rotate {
             from {
                 transform: rotate(0deg);
             }
@@ -28,7 +28,7 @@
             }
         }
 
-        @keyframes slideInFromRight {
+        /* @keyframes slideInFromRight {
             0% {
                 transform: translateX(20%);
                 opacity: 0;
@@ -38,16 +38,16 @@
                 transform: translateX(0);
                 opacity: 1;
             }
-        }
+        } */
 
         .slide-in-right {
             animation: slideInFromRight 1s ease-out;
-        } */
+        }
     </style>
 </head>
 
 <body class="bg-black text-white font-sans">
-    <div class="flex flex-col sm:flex-row lg:h-screen">
+    <div class="flex flex-col sm:flex-row lg:h-screen ">
 
         <div class="text-center m-3 w-full sm:w-1/4 flex flex-col items-center border border-slate-400 rounded-3xl p-6">
             <h1 class="text-violet-500 text-4xl font-bold">Sharanappa</h1>
@@ -117,8 +117,12 @@
                 <div class="text-6xl font-semibold  mt-6">
                     <span id="typingText" class="border-r-2  text-6xl"></span>
                 </div>
-                <p class="text-gray-400 mt-10 text-lg">I design and code beautifully simple things and I love what I do.
-                    Just simple like that!</p>
+                <!-- <p class="text-gray-400 mt-10 text-lg">I design and build beautifully simple, interactive web applications — and I genuinely love what I do. Clean code, smooth user experiences, and creative problem-solving are what drive me every day.</p> -->
+                <p class="text-gray-400 mt-10 text-lg">I craft beautifully simple, interactive web applications with
+                    clean code and seamless user experiences — turning ideas into intuitive, impactful digital
+                    solutions.
+
+                </p>
 
                 <div class="flex justify-between sm:w-1/2 mt-10">
                     <div>
@@ -140,17 +144,21 @@
             <div id="about-section" class="mt-32">
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-house text-sm"></i>
+                    <i class="fa-solid fa-user text-sm"></i>
                     <h1 class="text-xs font-medium tracking-wider">ABOUT</h1>
                 </div>
 
-                <h2 class="text-5xl font-semibold mt-10 tracking-wide">Every great design begin with an even <span
-                        class="text-violet-500">better story</span></h2>
+                <h2 class="text-5xl font-semibold mt-10 tracking-wide">Every great experience begins with a <span
+                        class="text-violet-500">story</span> — here’s mine.</h2>
 
-                <p class="text-gray-400 mt-10 text-lg">I am Sharanappa, a junior Software Engineer. I have completed
-                    multiple projects independently, showcasing my ability to create interactive and user-friendly web
-                    applications using React. I am eager to contribute my skills and continue learning in a
-                    collaborative team environment. Let's work together to bring your ideas to life!</p>
+                <p class="text-gray-400 mt-5 text-lg font-semibold">Hi, I'm Sharanappa, a Junior Software Engineer with
+                    a passion for creating interactive and user-friendly web applications using React.</p>
+                <p class="text-gray-400 mt-5 text-lg">I specialize in creating seamless, responsive, and visually
+                    engaging digital experiences. Focused on clean code and modern design, I strive to deliver products
+                    that are both functional and intuitive.</p>
+                <p class="text-gray-400 mt-5 text-lg">Always learning and eager to take on new challenges, I stay
+                    updated with the latest industry trends and love collaborating on innovative projects.</p>
+                <p class="text-gray-400 mt-5 text-lg">Let’s connect and bring your ideas to life! 🚀</p>
 
 
             </div>
@@ -162,7 +170,7 @@
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
                     <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Experience</h1>
+                    <h1 class="text-xs font-medium tracking-wider">EXPERIENCE</h1>
                 </div>
 
 
@@ -198,7 +206,7 @@
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
                     <i class="fa-solid fa-graduation-cap text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Education</h1>
+                    <h1 class="text-xs font-medium tracking-wider">EDUCATION</h1>
                 </div>
 
 
@@ -231,7 +239,7 @@
             <div id="courses-section" class="mt-10 sm:mt-20 lg:mt-40 ">
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
                     <i class="fa-solid fa-laptop-code text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">courses</h1>
+                    <h1 class="text-xs font-medium tracking-wider">COURSES</h1>
                 </div>
 
 
@@ -294,8 +302,8 @@
 
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-laptop-code text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Serivces</h1>
+                    <i class="fa-solid fa-gears text-sm"></i>
+                    <h1 class="text-xs font-medium tracking-wider">SERVICES</h1>
                 </div>
                 <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
                     My <span class="text-violet-500">Services</span>
@@ -362,8 +370,8 @@
 
             <div id="skils-section" class="mt-10 sm:mt-20 lg:mt-32">
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Skills</h1>
+                    <i class="fa-solid fa-shapes text-sm"></i>
+                    <h1 class="text-xs font-medium tracking-wider">SKILLS</h1>
                 </div>
                 <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
                     My <span class="text-violet-500">Advantages</span>
@@ -513,7 +521,7 @@
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
                     <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Projects</h1>
+                    <h1 class="text-xs font-medium tracking-wider">PROJECTS</h1>
                 </div>
 
 
@@ -835,7 +843,7 @@
 
                 <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
                     <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">Blogs</h1>
+                    <h1 class="text-xs font-medium tracking-wider">BLOGS</h1>
                 </div>
 
 
@@ -1090,9 +1098,6 @@
 
 
 
-
-
-
         <div class="p-5 fixed right-0 mt-10 flex-col items-center border-2 rounded-full mr-5 flex md:hidden"
             id="menuToggle">
             <i class="fa-solid fa-bars"></i>
@@ -1110,7 +1115,7 @@
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Home
+                        INTRODUCTION
                     </span>
                 </li>
                 <li class="relative group">
@@ -1119,43 +1124,64 @@
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        About
+                        ABOUT
                     </span>
                 </li>
                 <li class="relative group">
                     <a href="#resume" class="hover:text-violet-500 transition duration-300 cursor-pointer">
-                        <i class="fa-solid fa-file"></i>
+                        <i class="fa-solid fa-briefcase"></i>
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Resume
+                        EXPERIENCE
                     </span>
                 </li>
                 <li class="relative group">
                     <a href="#services" class="hover:text-violet-500 transition duration-300 cursor-pointer">
-                        <i class="fa-solid fa-cogs"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Services
+                        EDUCATION
                     </span>
                 </li>
                 <li class="relative group">
                     <a href="#skills" class="hover:text-violet-500 transition duration-300 cursor-pointer">
-                        <i class="fa-solid fa-snowflake"></i>
+                        <i class="fa-solid fa-gears"></i>
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Skills
+                        SERVICES
                     </span>
                 </li>
                 <li class="relative group">
                     <a href="#projects" class="hover:text-violet-500 transition duration-300 cursor-pointer">
-                        <i class="fa-solid fa-address-card"></i>
+                        <i class="fa-solid fa-shapes"></i>
+
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Projects
+                        SKILLS
+                    </span>
+                </li>
+                <li class="relative group">
+                    <a href="#contact" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                        <!-- <i class="fa-solid fa-envelope"></i> -->
+                        <i class="fa-solid fa-list-check"></i>
+                    </a>
+                    <span
+                        class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
+                        PROJECTS
+                    </span>
+                </li>
+                <li class="relative group">
+                    <a href="#contact" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+
+                        <i class="fa-solid fa-newspaper"></i>
+                    </a>
+                    <span
+                        class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
+                        BLOGS
                     </span>
                 </li>
                 <li class="relative group">
@@ -1164,7 +1190,7 @@
                     </a>
                     <span
                         class="absolute right-16 top-1/2 -translate-y-1/2 bg-white text-gray-900 text-xs font-medium px-3 py-1.5 rounded-lg shadow-lg opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 whitespace-nowrap">
-                        Contact
+                        CONTACT
                     </span>
                 </li>
             </ul>
@@ -1173,36 +1199,102 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 
 
-    <div id="drawer" class="drawer fixed top-0 left-0 h-full bg-gray-800 text-white w-64 z-50">
-        <div class="p-5">
-            <ul class="space-y-8 text-2xl text-violet-500">
-                <li><i class="fa-solid fa-house cursor-pointer hover:text-violet-500"></i> Home</li>
-                <li><i class="fa-solid fa-user cursor-pointer hover:text-violet-500"></i> <a
-                        href="#about-section">About</a></li>
-                <li><i class="fa-solid fa-file cursor-pointer hover:text-violet-500"></i> Documents</li>
-                <li><i class="fa-solid fa-cogs cursor-pointer hover:text-violet-500"></i> Settings</li>
-                <li><i class="fa-solid fa-snowflake cursor-pointer hover:text-violet-500"></i> Snowflakes</li>
-                <li><i class="fa-solid fa-address-card cursor-pointer hover:text-violet-500"></i> Contact</li>
-                <li><i class="fa-solid fa-envelope cursor-pointer hover:text-violet-500"></i> Messages</li>
-            </ul>
+
+    <div id="drawer" class="drawer  fixed top-0 left-0 h-full w-72 bg-gray-900/80 backdrop-blur-xl text-white z-50 shadow-2xl border-r border-indigo-500/30 flex flex-col justify-between transition-all duration-300 rounded-r-2xl">
+
+
+        <div>
+            <div class="p-5 border-b border-white/10">
+                <div class="flex items-center space-x-4">
+                    <div>
+                        <h2 class="text-xl font-bold text-white">Sharanappa</h2>
+                        <p class="text-sm text-indigo-300">Front End Developer</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="p-4">
+                <ul class="space-y-2">
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-house text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#home" class="text-gray-300 group-hover:text-white font-medium">Home</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-user text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#about" class="text-gray-300 group-hover:text-white font-medium">About</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-briefcase text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#experience" class="text-gray-300 group-hover:text-white font-medium">Experience</a>
+                    </li>
+
+
+
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-gears text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#services" class="text-gray-300 group-hover:text-white font-medium">Services</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-shapes text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Skills</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-list-check text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Projects</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-newspaper text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Blogs</a>
+                    </li>
+                    <li
+                        class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
+                        <i class="fa-solid fa-envelope text-indigo-400 group-hover:text-white text-lg"></i>
+                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Contact</a>
+                    </li>
+
+
+                </ul>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div class="p-4 border-t border-white/10">
+            <div class="flex gap-4 justify-center">
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
+                    <i class="fa-brands fa-linkedin text-gray-300 hover:text-indigo-400 text-lg"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
+                    <i class="fa-brands fa-github text-gray-300 hover:text-indigo-400 text-lg"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
+                    <i class="fa-brands fa-twitter text-gray-300 hover:text-indigo-400 text-lg"></i>
+                </a>
+                <a href="#"
+                    class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
+                    <i class="fa-brands fa-whatsapp text-gray-300 hover:text-indigo-400 text-lg"></i>
+                </a>
+            </div>
         </div>
     </div>
+
 
 
 
