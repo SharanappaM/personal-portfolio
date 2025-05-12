@@ -28,10 +28,27 @@
             }
         }
 
-     
+
 
         .slide-in-right {
             animation: slideInFromRight 1s ease-out;
+        }
+
+
+
+        @media (min-width: 640px) {
+            .custom-sidebar {
+                position: fixed;
+                left: 0;
+                top: 0;
+                height: 100vh;
+                margin: 0;
+            }
+
+            .main-content {
+                margin-left: 380px;
+                /* adjust this value to match your sidebar width */
+            }
         }
     </style>
 </head>
@@ -39,1053 +56,1068 @@
 <body class="bg-black text-white font-sans">
     <div class="flex flex-col sm:flex-row lg:h-screen ">
 
-       
-<div class="max-w-sm w-full mx-auto p-6 border border-slate-400 rounded-3xl flex flex-col items-center text-center m-3">
-  <h1 class="text-violet-500 text-4xl font-bold">Sharanappa</h1>
-  <p class="text-gray-400 text-lg mt-1">Front End Developer</p>
-
-  <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Profile"
-    class="h-40 w-40 md:h-48 md:w-48 rounded-full mt-4 object-cover">
-
-  <p class="text-gray-400 text-base mt-4 break-words">hbdsharanappa52@gmail.com</p>
-  <p class="text-gray-400 text-base">Nagavara, Karnataka, IN</p>
-
-  <div class="flex flex-wrap gap-4 mt-6 justify-center">
-    <a href="#"
-      class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
-      <i class="fa-brands fa-linkedin text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
-    </a>
-    <a href="#"
-      class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
-      <i class="fa-brands fa-github text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
-    </a>
-    <a href="#"
-      class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
-      <i class="fa-brands fa-twitter text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
-    </a>
-    <a href="#"
-      class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
-      <i class="fa-brands fa-whatsapp text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
-    </a>
-  </div>
-
- 
-  <div class="flex flex-col sm:flex-row gap-4 mt-6 w-full justify-center">
-    <button
-      class="flex items-center justify-center gap-2 bg-violet-600 px-5 py-3 rounded-xl text-white font-semibold text-base border-2 border-transparent hover:bg-black hover:border-violet-600 transition duration-300 w-full sm:w-auto">
-      <i class="fas fa-briefcase"></i>
-      Hire Me!
-    </button>
-
-    <button
-      class="flex items-center justify-center gap-2 bg-violet-600 px-5 py-3 rounded-xl text-white font-semibold text-base border-2 border-transparent hover:bg-black hover:border-violet-600 transition duration-300 w-full sm:w-auto">
-      <i class="fas fa-download"></i>
-      Resume
-    </button>
-  </div>
-
-  <p class="text-gray-500 text-xs mt-8">© 2025 Sharanappa. All rights reserved.</p>
-</div>
 
 
-        <div class="flex-1 lg:pl-8 pt-14 lg:pr-36 overflow-y-auto m-5 lg:m-0 ">
-            <div id="home" class="introduction-section">
+        <div
+            class="max-w-sm w-full mx-auto p-6 border border-white rounded-3xl flex flex-col items-center text-center m-3 custom-sidebar justify-between ">
+            <h1 class="text-violet-600 text-4xl font-bold">Sharanappa</h1>
+            <p class="text-gray-400 text-lg mt-1">Front End Developer</p>
 
+            <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Profile Picture"
+                class="h-40 w-40 md:h-48 md:w-48 rounded-full mt-4 object-cover">
 
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-house text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">INTRODUCTION</h1>
-                </div>
+            <p class="text-gray-400 text-base mt-4 break-words">hbdsharanappa52@gmail.com</p>
+            <p class="text-gray-400 text-base">Nagavara, Bengaluru, IN</p>
 
-
-
-                <h2 class="text-6xl font-semibold mt-10 tracking-wide">Hello there! I'm
-                    <span class="text-violet-500 ">Sharanappa</span>,
-                </h2>
-
-                <div class="text-6xl font-semibold  mt-6">
-                    <span id="typingText" class="border-r-2  text-6xl"></span>
-                </div>
-                <!-- <p class="text-gray-400 mt-10 text-lg">I design and build beautifully simple, interactive web applications — and I genuinely love what I do. Clean code, smooth user experiences, and creative problem-solving are what drive me every day.</p> -->
-                <p class="text-gray-400 mt-10 text-lg">I craft beautifully simple, interactive web applications with
-                    clean code and seamless user experiences — turning ideas into intuitive, impactful digital
-                    solutions.
-
-                </p>
-
-                <div class="flex justify-between sm:w-1/2 mt-10">
-                    <div>
-                        <h1 class="text-7xl  text-violet-500">1.5+</h1>
-                        <h1 class="uppercase text-lg w-20">years of experience </h1>
-                    </div>
-                    <div>
-                        <h1 class="text-7xl text-violet-500">18+</h1>
-                        <h1 class="uppercase text-lg w-20">Technologies So Far </h1>
-                    </div>
-                </div>
-
+            <div class="flex flex-wrap gap-4 mt-6 justify-center items-center">
+                <a href="https://www.linkedin.com/in/sharanappab/" target="_blank"
+                    class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
+                    <i class="fa-brands fa-linkedin text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
+                </a>
+                <a href="https://github.com/sharanappaM/" target="_blank"
+                    class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
+                    <i class="fa-brands fa-github text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
+                </a>
+                <a href="https://x.com/sharan_hbd" target="_blank"
+                    class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
+                    <i class="fa-brands fa-x-twitter text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
+                </a>
+                <a href="https://wa.link/r4s6df" target="_blank"
+                    class="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center border-2 border-gray-400 rounded-full hover:border-violet-600 transition">
+                    <i class="fa-brands fa-whatsapp text-xl md:text-2xl text-gray-400 hover:text-violet-600"></i>
+                </a>
             </div>
 
+            <div class="flex flex-col sm:flex-row gap-4 mt-6 w-full justify-center items-center">
+                <a href="#contact"
+                    class="flex items-center justify-center gap-2 bg-violet-600 px-5 py-3 rounded-xl text-white font-semibold text-base border-2 border-transparent hover:bg-black hover:border-violet-600 transition duration-300 w-full sm:w-auto">
+                    <i class="fas fa-briefcase"></i>
+                    Hire Me!
+                </a>
 
-
-
-
-            <div id="about" class="mt-32 scroll-mt-20 ">
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-user text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">ABOUT</h1>
-                </div>
-
-                <h2 class="text-5xl font-semibold mt-10 tracking-wide">Every great experience begins with a <span
-                        class="text-violet-500">story</span> — here’s mine.</h2>
-
-                <p class="text-gray-400 mt-5 text-lg font-semibold">Hi, I'm Sharanappa, a Junior Software Engineer with
-                    a passion for creating interactive and user-friendly web applications using React.</p>
-                <p class="text-gray-400 mt-5 text-lg">I specialize in creating seamless, responsive, and visually
-                    engaging digital experiences. Focused on clean code and modern design, I strive to deliver products
-                    that are both functional and intuitive.</p>
-                <p class="text-gray-400 mt-5 text-lg">Always learning and eager to take on new challenges, I stay
-                    updated with the latest industry trends and love collaborating on innovative projects.</p>
-                <p class="text-gray-400 mt-5 text-lg">Let’s connect and bring your ideas to life! 🚀</p>
-
-
+                <a href="./resume.pdf" download
+                    class="flex items-center justify-center gap-2 bg-violet-600 px-5 py-3 rounded-xl text-white font-semibold text-base border-2 border-transparent hover:bg-black hover:border-violet-600 transition duration-300 w-full sm:w-auto">
+                    <i class="fas fa-download"></i>
+                    Resume
+                </a>
             </div>
 
-
-
-            <div id="experience-section" class="mt-32">
-
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">EXPERIENCE</h1>
-                </div>
-
-
-                <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28  sm:mt-12">
-                    <h2 class="text-5xl font-semibold mt-10 tracking-wide">Work <span
-                            class="text-violet-500">Experience</span></h2>
-
-                    <div class="w-full  max-w-lg p-6 border-2 mt-10 border-amber-50 text-white rounded-3xl  hover:border-violet-500">
-                        <div class="flex items-center gap-4 mb-4">
-                            <i class="fa-solid fa-briefcase text-violet-500 text-3xl"></i>
-                            <div>
-                                <h2 class="text-2xl font-bold">Junior Software Engineer</h2>
-                                <p class="text-gray-400">Travercel Technologies Pvt Ltd · Full-time</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-2">
-                            <i class="fa-solid fa-calendar-alt text-violet-500"></i>
-                            Jun 2023 - Present · 1 yr 10 mos
-                        </p>
-                        <p class="text-gray-400 mb-4">
-                            <i class="fa-solid fa-location-dot text-violet-500"></i>
-                            Bengaluru, Karnataka, India · On-site
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div id="education-section" class="">
-
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-graduation-cap text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">EDUCATION</h1>
-                </div>
-
-
-                <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28 mt-8 sm:mt-12">
-                    <div class="w-full max-w-lg p-6 border-2 border-amber-50 text-white rounded-3xl  hover:border-violet-500 ">
-                        <div class="flex items-center gap-4 mb-4">
-                            <i class="fa-solid fa-graduation-cap text-violet-500 text-3xl"></i>
-                            <div>
-                                <h2 class="text-2xl font-bold">Bachelor of Engineering - BE</h2>
-                                <p class="text-gray-400">Visvesvaraya Technological University · Full-time</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-2">
-                            <i class="fa-solid fa-calendar-alt text-violet-500"></i>
-                            Jan 2019 - Aug 2022
-                        </p>
-                        <p class="text-gray-400 mb-4">
-                            <i class="fa-solid fa-location-dot text-violet-500"></i>
-                            Belagavi, Karnataka, India
-                        </p>
-                    </div>
-
-                    <h2 class="text-5xl font-semibold mt-10 tracking-wide">Higher <span
-                            class="text-violet-500">Education</span></h2>
-                </div>
-
-            </div>
-
-
-            <div id="courses-section" class="mt-10 sm:mt-20 lg:mt-40 ">
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-laptop-code text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">COURSES</h1>
-                </div>
-
-
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
-                    Certification <span class="text-violet-500">Courses</span>
-                </h2>
-
-                <div class="flex flex-col sm:flex-row sm:gap-8">
-
-                    <div
-                        class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl mb-6 sm:mb-0  hover:border-violet-500">
-                        <div class="flex items-center gap-4 mb-4">
-                            <i class="fa-solid fa-certificate text-yellow-400 text-3xl"></i>
-                            <div>
-                                <h2 class="text-2xl font-bold">Full Stack Development</h2>
-                                <p class="text-gray-400">JSpiders - Training & Development Center · Internship</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-2">
-                            <i class="fa-solid fa-calendar-alt text-yellow-400"></i>
-                            Sep 2022 - Jul 2023 · 11 mos
-                        </p>
-                        <p class="text-gray-400 mb-4">
-                            <i class="fa-solid fa-location-dot text-yellow-400"></i>
-                            Bengaluru, Karnataka, India · Remote
-                        </p>
-                        <p class="text-gray-400">
-                            <i class="fa-solid fa-laptop-code text-yellow-400"></i>
-                            Java,ReactJs,SQL and other skills
-                        </p>
-                    </div>
-
-
-                    <div class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl  hover:border-violet-500">
-                        <div class="flex items-center gap-4 mb-4">
-                            <i class="fa-solid fa-drafting-compass text-blue-400 text-3xl"></i>
-                            <div>
-                                <h2 class="text-2xl font-bold">CAD Designer</h2>
-                                <p class="text-gray-400">GOVERNMENT TOOL ROOM AND TRAINING CENTRE · Internship</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 mb-2">
-                            <i class="fa-solid fa-calendar-alt text-blue-400"></i>
-                            Aug 2020 - Oct 2020 · 3 mos
-                        </p>
-                        <p class="text-gray-400 ">
-                            <i class="fa-solid fa-location-dot text-blue-400"></i>
-                            Karnataka, India · On-site
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div id="services-section" class="mt-10 sm:mt-20 lg:mt-32">
-
-
-
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-gears text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">SERVICES</h1>
-                </div>
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
-                    My <span class="text-violet-500">Services</span>
-                </h2>
-
-                <div class="flex flex-col sm:flex-row sm:gap-8">
-
-                    <div class="grid md:grid-cols-2 gap-8">
-
-                        <div
-                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
-                            <!-- <i class="fas fa-code text-6xl text-violet-500 mr-6"></i> -->
-                            <img src="./img/Web4.png" alt="React Logo" class="h-24 w-24 object-contain">
-
-                            <div class="group w-full ml-3">
-                                <h2 class="text-xl font-bold mb-4">Web Development</h2>
-                                <p class="text-gray-400">Creating responsive and interactive websites using HTML,
-                                    CSS, JavaScript, and React.js. Focus on modern UI/UX and cross-browser
-                                    compatibility.</p>
-                            </div>
-                        </div>
-
-
-                        <div
-                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
-                            <!-- <i class="fas fa-mobile-alt text-6xl text-blue-400 mr-6"></i> -->
-                            <img src="./img/MobileDev.png" alt="React Logo" class="h-24 w-24 object-contain">
-
-                            <div class="group w-full ml-3">
-                                <h2 class="text-xl font-bold mb-4">Mobile App Development</h2>
-                                <p class="text-gray-400">Building user-friendly cross-platform mobile applications
-                                    using React Native. Delivering seamless experiences on both iOS and Android.</p>
-                            </div>
-                        </div>
-
-
-                        <div
-                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
-                            <!-- <i class="fas fa-server text-6xl text-yellow-400 mr-6"></i> -->
-                            <img src="./img/API.png" alt="React Logo" class="h-24 w-24 object-contain">
-
-                            <div class="group w-full ml-3">
-                                <h2 class="text-xl font-bold mb-4">Backend Development</h2>
-                                <p class="text-gray-400">Developing robust server-side applications using Node.js
-                                    and Java. Ensuring scalability, security, and optimized database management.</p>
-                            </div>
-                        </div>
-
-
-                        <div
-                            class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-500">
-                            <!-- <i class="fas fa-paint-brush text-6xl text-pink-400 mr-6"></i> -->
-                            <img src="./img/DesignDev.png" alt="React Logo" class="h-24 w-24 object-contain">
-                            <div class="group w-full ml-3">
-                                <h2 class="text-xl font-bold mb-4">Branding & Marketing Design</h2>
-                                <p class="text-gray-400">Designing engaging visuals using Canva and Figma for
-                                    branding, marketing campaigns, and social media promotion. Enhancing brand
-                                    identity through creative content.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="skils-section" class="mt-10 sm:mt-20 lg:mt-32">
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-shapes text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">SKILLS</h1>
-                </div>
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
-                    My <span class="text-violet-500">Advantages</span>
-                </h2>
-
-                <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/html-logo.png" alt="HTML Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">HTML</p>
-                    </div>
-
-
-
-
-
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/css-logo.png" alt="CSS Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">CSS</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Tailwind CSS.png" alt="CSS Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Tailwind</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Bootstrap.png" alt="CSS Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Bootstrap</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/NewJavaScript-logo.png" alt="JavaScript Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">JavaScript</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/react-logo.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">ReactJS</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/material-ui-logo.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Material UI</p>
-                    </div>
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Node.js.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Node Js</p>
-                    </div>
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Redux.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Redux</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/TypeScript.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">TypeScript</p>
-                    </div>
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/java-logo.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Java</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/mysql-logo.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">MySQL</p>
-                    </div>
-                </div>
-
-
-
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
-                    Essential <span class="text-violet-500">Tools</span>
-                </h2>
-
-                <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/vs-code-logo.png" alt="VS Code"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">VS Cose</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Vite.js.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Vite</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/NPM.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">NPM</p>
-                    </div>
-
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/Postman.png" alt="Postman"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Postman</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/IntelliJ IDEA.png" alt="CSS Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">IntelliJ</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/atlassian-logo.png" alt="CSS Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Atlassian</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/icons8-github-512.png" alt="GitHub"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">GitHub</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/BitBucket.png" alt="Bitbucket"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Bitbucket</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/icons8-canva-1000.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Canva</p>
-                    </div>
-                    <div class="flex flex-col items-center group">
-                        <img src="./img/figma-logo.png" alt="React Logo"
-                            class="h-24 w-24 object-cover border-2 hover:border-violet-700 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
-                        <p class="mt-2 text-lg font-semibold">Figma</p>
-                    </div>
-
-
-
-                </div>
-
-
-            </div>
-
-
-            <div id="project-section" class="mt-10 sm:mt-20 lg:mt-32">
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">PROJECTS</h1>
-                </div>
-
-
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide">
-                    My Recent <span class="text-violet-500">Projects</span>
-                </h2>
-
-
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-
-                    <div>
-                        <div class="bg-blue-950 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://people-pro.netlify.app/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/PeoplePro" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/people-pro.webp" alt="people-pro"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Material-UI</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Node
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Express
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">MySQL</span>
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://people-pro.netlify.app/" target="_blank">People-Pro HR Management </a>
-                        </p>
-                    </div>
-
-
-                    <div>
-                        <div class="bg-sky-200 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://insurancedekho.netlify.app/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/insurancedekho" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/insurancedekho.webp" alt="insurancedekho"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React Bootstrap</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Node
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Express
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">MongoDB</span>
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://insurancedekho.netlify.app/" target="_blank">InsuranceDekho
-                            </a>
-                        </p>
-                    </div>
-
-
-
-                    <div>
-                        <div class="bg-blue-400 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://smart-watch-showcase-sharan-hbd.netlify.app/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/smart_watch_showcase" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/smart-watch-showcase.webp" alt="people-pro"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
-                                    CSS
-                                </span>
-
-
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://smart-watch-showcase-sharan-hbd.netlify.app/" target="_blank">Smart-Watch
-                                Showcase </a>
-                        </p>
-                    </div>
-
-
-                    <div>
-                        <div class="bg-gray-200 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://www.travercel.com/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/travercel.webp" alt="people-pro"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
-                                    CSS
-                                </span>
-
-
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://www.travercel.com/" target="_blank">Travercel Website </a>
-                        </p>
-                    </div>
-
-
-
-
-
-
-                    <div>
-                        <div class="bg-gray-50 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://nextiqz.in/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/nextiqz.webp" alt="people-pro"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
-                                    CSS
-                                </span>
-
-
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://nextiqz.in/" target="_blank">NextIQz Website </a>
-                        </p>
-                    </div>
-
-
-
-                    <div>
-                        <div class="bg-gray-900 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
-
-
-                            <a href="https://sharanhbdmovieshub.netlify.app/" target="_blank"
-                                class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-solid fa-link text-lg"></i>
-                            </a>
-
-
-                            <a href="https://github.com/SharanappaM/Movies_hub" target="_blank"
-                                class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-
-
-                            <div class="mt-16 flex justify-center">
-                                <img src="./img/project-images/movieshub.webp" alt="people-pro"
-                                    class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
-                            </div>
-
-
-                            <div class="flex flex-wrap gap-3 pl-4 pb-4">
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
-                                    js</span>
-                                <span
-                                    class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Bootstrap
-                                </span>
-
-
-                            </div>
-
-
-
-                        </div>
-                        <p class="text-2xl hover:underline m-5">
-                            <a href="https://sharanhbdmovieshub.netlify.app/" target="_blank">Movies Hub </a>
-                        </p>
-                    </div>
-
-
-
-                </div>
-
-                <div class="flex justify-center mt-6">
-                    <a href="https://github.com/SharanappaM?tab=repositories" target="_blank"
-                        class="cursor-pointer relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-purple-600 transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]">
-                        <div class="absolute flex px-1 py-0.5 justify-start items-center inset-0">
-                            <div
-                                class="w-[0%] group-hover:w-full transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
-                            </div>
-                            <div
-                                class="rounded-full shrink-0 flex justify-center items-center shadow-[inset_1px_-1px_3px_0_black] h-full aspect-square bg-purple-600  transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] group-hover:bg-black">
-                                <div
-                                    class="size-[0.8rem] text-black group-hover:text-white group-hover:-rotate-45 transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
-                                        height="100%" width="100%">
-                                        <path fill="currentColor"
-                                            d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pl-[3.4rem] pr-[1.1rem] group-hover:pl-[1.1rem] group-hover:pr-[3.4rem] transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]  text-white">
-                            View more
-                        </div>
-                    </a>
-
-                </div>
-
-
-            </div>
-
-
-            <div id="blog-section" class="mt-10 sm:mt-20 lg:mt-32">
-
-                <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
-                    <i class="fa-solid fa-briefcase text-sm"></i>
-                    <h1 class="text-xs font-medium tracking-wider">BLOGS</h1>
-                </div>
-
-
-                <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide">
-                    My Recent <span class="text-violet-500">Blogs</span>
-                </h2>
-
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
-
-
-                    <a href="https://dev.to/sharanappa_m/deploying-a-nodejs-project-with-mysql-on-railway-2k7n"
-                        target="_blank"
-                        class="max-w-lg bg-black border-amber-50 border-2 hover:border-violet-500 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <img src="./img/Blog11.webp" alt="Blog Cover" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
-                                Deploying a Node.js Project with MySQL on Railway
-                            </h3>
-                            <p class="text-gray-300 text-sm mb-4">
-                                Deploy and host your Node.js project seamlessly on Railway with built-in MySQL support.
-                                Easily connect your app to a MySQL database using Railway's environment variables.
-                                Perfect for full-stack applications, with minimal setup and continuous deployment
-                                features.
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
-                                    class="w-10 h-10 rounded-full object-cover">
-                                <div>
-                                    <p class="text-sm font-medium text-white">Sharanappa</p>
-                                    <p class="text-gray-300 text-xs">📅 Posted on Apr 19, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <a href="https://dev.to/sharanappa_m/how-to-set-up-tailwind-css-v4-using-tailwind-cli-1481"
-                        target="_blank"
-                        class="max-w-lg bg-black border-amber-50 border-2 hover:border-violet-500 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <img src="./img/Blog2.webp" alt="Blog Cover" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
-                                How to Set Up Tailwind CSS v4 Using Tailwind CLI
-                            </h3>
-                            <p class="text-gray-300 text-sm mb-4">
-                                Tailwind CSS v4 is a powerful utility-first CSS framework that helps you rapidly build
-                                custom designs.
-                                If you're looking to set up Tailwind CSS v4 using the Tailwind CLI, this guide walks you
-                                through every step.
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
-                                    class="w-10 h-10 rounded-full object-cover">
-                                <div>
-                                    <p class="text-sm font-medium text-white">Sharanappa</p>
-                                    <p class="text-gray-300 text-xs">📅 Posted on Mar 6, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <a href="https://dev.to/sharanappa_m/understanding-react-router-a-step-by-step-guide-for-beginners-38hk"
-                        target="_blank"
-                        class="max-w-md bg-black border-amber-50 border-2 hover:border-violet-500 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <img src="./img/Blog3.webp" alt="Blog Cover" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
-                                Understanding React Router: A Step-by-Step Guide for Beginners
-                            </h3>
-                            <p class="text-gray-300 text-sm mb-4">
-                                React Router is a popular library for handling navigation in React applications. It
-                                enables single-page applications (SPAs) with dynamic routing for seamless UX.
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
-                                    class="w-10 h-10 rounded-full object-cover">
-                                <div>
-                                    <p class="text-sm font-medium text-white">Sharanappa</p>
-                                    <p class="text-gray-300 text-xs">📅 Posted on Dec 21, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-
-                    <a href="https://dev.to/sharanappa_m/unlocking-es6-essential-features-every-developer-should-know-2ge"
-                        target="_blank"
-                        class="max-w-md bg-black border-amber-50 border-2 hover:border-violet-500 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
-                        <img src="./img/Blog1.webp" alt="Blog Cover" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
-                                Unlocking ES6 — Essential Features Every Developer Should Know
-                            </h3>
-                            <p class="text-gray-300 text-sm mb-4">
-                                ES6 introduced powerful features that revolutionized JavaScript. Learn the must-know
-                                improvements like arrow functions, let/const, template literals, and more.
-                            </p>
-                            <div class="flex items-center gap-3">
-                                <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
-                                    class="w-10 h-10 rounded-full object-cover">
-                                <div>
-                                    <p class="text-sm font-medium text-white">Sharanappa</p>
-                                    <p class="text-gray-300 text-xs">📅 Posted on Dec 8, 2024</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
-
-
-                <div class="flex justify-center mt-6">
-                    <a href="https://dev.to/sharanappa_m" target="_blank"
-                        class="cursor-pointer relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-purple-600 transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]">
-                        <div class="absolute flex px-1 py-0.5 justify-start items-center inset-0">
-                            <div
-                                class="w-[0%] group-hover:w-full transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
-                            </div>
-                            <div
-                                class="rounded-full shrink-0 flex justify-center items-center shadow-[inset_1px_-1px_3px_0_black] h-full aspect-square bg-purple-600  transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] group-hover:bg-black">
-                                <div
-                                    class="size-[0.8rem] text-black group-hover:text-white group-hover:-rotate-45 transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
-                                        height="100%" width="100%">
-                                        <path fill="currentColor"
-                                            d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            class="pl-[3.4rem] pr-[1.1rem] group-hover:pl-[1.1rem] group-hover:pr-[3.4rem] transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]  text-white">
-                            View more
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-
-
-
-
-
-            <section class="py-20">
-                <div
-                    class="grid sm:grid-cols-2 gap-14 mx-auto max-w-6xl  rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.4)] text-white font-[sans-serif] ">
-
-                    <div class="space-y-6">
-
-                        <div>
-                            <h1 class="text-4xl font-bold text-white mb-2">Get in Touch</h1>
-                            <div class="w-12 h-1 bg-violet-600 rounded-full"></div>
-                        </div>
-
-
-                        <p class="text-gray-400 text-base leading-relaxed">
-                            Have an exciting project or idea? We'd love to hear from you and explore how we can
-                            collaborate to bring your vision to life.
-                        </p>
-
-
-                        <div class="space-y-5 pt-4">
-
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
-                                    <i class="fas fa-envelope text-violet-600 text-lg"></i>
-                                </div>
-                                <div class="text-sm text-gray-300">
-                                    <p class="font-medium text-white">Email</p>
-                                    <p>hbdsharanappa52@gmail.com</p>
-                                </div>
-                            </div>
-
-
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
-                                    <i class="fas fa-phone-alt text-violet-600 text-lg"></i>
-                                </div>
-                                <div class="text-sm text-gray-300">
-                                    <p class="font-medium text-white">Phone</p>
-                                    <p>+91 9742595070</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-center gap-4">
-                                <div
-                                    class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
-                                    <i class="fas fa-map-marker-alt text-violet-600 text-lg"></i>
-                                </div>
-                                <div class="text-sm text-gray-300">
-                                    <p class="font-medium text-white">Location</p>
-                                    <p>Nagawara, Bangalore, KA, IN</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form id="contact-form" class="space-y-5" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="access_key" value="2ec66f12-a3e5-447c-8253-34ae892bc139s">
-
-                        <input type="text" placeholder="Your Name" name="name" required
-                            class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
-
-                        <input type="email" placeholder="Your Email" name="email" required
-                            class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
-
-                        <input type="text" placeholder="Subject" name="message" required
-                            class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
-
-                        <textarea type="text" placeholder="Your Message" rows="5" name="email_subject"
-                            class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150"></textarea>
-
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                        <button type="submit"
-                            class="w-full bg-violet-600 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-sm transition-all duration-200">
-                            Send Message
-                        </button>
-
-
-
-
-                    </form>
-
-                </div>
-
-
-            </section>
-
-            <div id="popup-modal"
-                class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
-                <div class="bg-[#1e1e1e] text-white p-6 rounded-xl shadow-xl w-full max-w-sm text-center">
-                    <div class="text-3xl mb-2">✅</div>
-                    <h2 class="text-xl font-semibold mb-2">Message Sent!</h2>
-                    <p class="text-gray-400 text-sm mb-4">Thank you for reaching out. I’ll get back to you soon!</p>
-                    <button onclick="closePopup()"
-                        class="mt-2 px-4 py-2 bg-violet-600 hover:bg-blue-600 text-white rounded-md text-sm transition duration-150">
-                        Close
-                    </button>
-                </div>
-            </div>
-
-
-
-
+            <p class="text-gray-500 text-base mt-8 text-center">© 2025 Sharanappa. All rights reserved.</p>
         </div>
 
+        <div class="main-content">
 
+
+
+            <div class="flex-1 lg:pl-8 pt-14 lg:pr-36 overflow-y-auto m-5 lg:m-0 ">
+                <div id="home" class="introduction-section scroll-mt-20 ">
+
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-house text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">INTRODUCTION</h1>
+                    </div>
+
+
+
+                    <h2 class="text-6xl font-semibold mt-10 tracking-wide">Hello there! I'm
+                        <span class="text-violet-600 ">Sharanappa</span>,
+                    </h2>
+
+                    <div class="text-6xl font-semibold  mt-6">
+                        <span id="typingText" class="border-r-2  text-6xl"></span>
+                    </div>
+                    <!-- <p class="text-gray-400 mt-10 text-lg">I design and build beautifully simple, interactive web applications — and I genuinely love what I do. Clean code, smooth user experiences, and creative problem-solving are what drive me every day.</p> -->
+                    <p class="text-gray-400 mt-10 text-lg">I craft beautifully simple, interactive web applications with
+                        clean code and seamless user experiences — turning ideas into intuitive, impactful digital
+                        solutions.
+
+                    </p>
+
+                    <div class="flex justify-between sm:w-1/2 mt-10">
+                        <div>
+                            <h1 class="text-7xl  text-violet-600">1.9+</h1>
+                            <h1 class="uppercase text-lg w-20">years of experience </h1>
+                        </div>
+                        <div>
+                            <h1 class="text-7xl text-violet-600">18+</h1>
+                            <h1 class="uppercase text-lg w-20">Technologies So Far </h1>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div id="about" class="mt-32 scroll-mt-20 ">
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-user text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">ABOUT</h1>
+                    </div>
+
+                    <h2 class="text-5xl font-semibold mt-10 tracking-wide">Every great experience begins with a <span
+                            class="text-violet-600">story</span> — here’s mine.</h2>
+
+                    <p class="text-gray-400 mt-5 text-lg font-semibold">Hi, I'm Sharanappa, a Junior Software Engineer
+                        with
+                        a passion for creating interactive and user-friendly web applications using React.</p>
+                    <p class="text-gray-400 mt-5 text-lg">I specialize in creating seamless, responsive, and visually
+                        engaging digital experiences. Focused on clean code and modern design, I strive to deliver
+                        products
+                        that are both functional and intuitive.</p>
+                    <p class="text-gray-400 mt-5 text-lg">Always learning and eager to take on new challenges, I stay
+                        updated with the latest industry trends and love collaborating on innovative projects.</p>
+                    <p class="text-gray-400 mt-5 text-lg">Let’s connect and bring your ideas to life! 🚀</p>
+
+
+                </div>
+
+
+
+                <div id="experience" class="mt-32 scroll-mt-20 ">
+
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-briefcase text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">EXPERIENCE</h1>
+                    </div>
+
+
+                    <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28  sm:mt-12">
+                        <h2 class="text-5xl font-semibold mt-10 tracking-wide">Work <span
+                                class="text-violet-600">Experience</span></h2>
+
+                        <div
+                            class="w-full  max-w-lg p-6 border-2 mt-10 border-amber-50 text-white rounded-3xl  hover:border-violet-600">
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-briefcase text-violet-600 text-3xl"></i>
+                                <div>
+                                    <h2 class="text-2xl font-bold">Junior Software Engineer</h2>
+                                    <p class="text-gray-400">Travercel Technologies Pvt Ltd · Full-time</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fa-solid fa-calendar-alt text-violet-600"></i>
+                                Jun 2023 - Present · 1 yr 10 mos
+                            </p>
+                            <p class="text-gray-400 mb-4">
+                                <i class="fa-solid fa-location-dot text-violet-600"></i>
+                                Bengaluru, Karnataka, India · On-site
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="education" class="scroll-mt-20 mt-10 lg:mt-0">
+
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-graduation-cap text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">EDUCATION</h1>
+                    </div>
+
+
+                    <div class="flex flex-col sm:flex-row sm:gap-8 lg:gap-28 mt-8 sm:mt-12">
+                        <div
+                            class="w-full max-w-lg p-6 border-2 border-amber-50 text-white rounded-3xl  hover:border-violet-600 ">
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-graduation-cap text-violet-600 text-3xl"></i>
+                                <div>
+                                    <h2 class="text-2xl font-bold">Bachelor of Engineering - BE</h2>
+                                    <p class="text-gray-400">Visvesvaraya Technological University · Full-time</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fa-solid fa-calendar-alt text-violet-600"></i>
+                                Jan 2019 - Aug 2022
+                            </p>
+                            <p class="text-gray-400 mb-4">
+                                <i class="fa-solid fa-location-dot text-violet-600"></i>
+                                Belagavi, Karnataka, India
+                            </p>
+                        </div>
+
+                        <h2 class="text-5xl font-semibold mt-10 tracking-wide">Higher <span
+                                class="text-violet-600">Education</span></h2>
+                    </div>
+
+                </div>
+
+
+                <div id="courses" class="mt-10 sm:mt-20  scroll-mt-20 ">
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-laptop-code text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">COURSES</h1>
+                    </div>
+
+
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
+                        Certification <span class="text-violet-600">Courses</span>
+                    </h2>
+
+                    <div class="flex flex-col sm:flex-row sm:gap-8">
+
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl mb-6 sm:mb-0  hover:border-violet-600">
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-certificate text-yellow-400 text-3xl"></i>
+                                <div>
+                                    <h2 class="text-2xl font-bold">Full Stack Development</h2>
+                                    <p class="text-gray-400">JSpiders - Training & Development Center · Internship</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fa-solid fa-calendar-alt text-yellow-400"></i>
+                                Sep 2022 - Jul 2023 · 11 mos
+                            </p>
+                            <p class="text-gray-400 mb-4">
+                                <i class="fa-solid fa-location-dot text-yellow-400"></i>
+                                Bengaluru, Karnataka, India · Remote
+                            </p>
+                            <p class="text-gray-400">
+                                <i class="fa-solid fa-laptop-code text-yellow-400"></i>
+                                Java,ReactJs,SQL and other skills
+                            </p>
+                        </div>
+
+
+                        <div
+                            class="w-full sm:w-1/2 lg:w-1/2 p-6 border-2 border-amber-50 text-white rounded-3xl  hover:border-violet-600">
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-drafting-compass text-blue-400 text-3xl"></i>
+                                <div>
+                                    <h2 class="text-2xl font-bold">CAD Designer</h2>
+                                    <p class="text-gray-400">GOVERNMENT TOOL ROOM AND TRAINING CENTRE · Internship</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-400 mb-2">
+                                <i class="fa-solid fa-calendar-alt text-blue-400"></i>
+                                Aug 2020 - Oct 2020 · 3 mos
+                            </p>
+                            <p class="text-gray-400 ">
+                                <i class="fa-solid fa-location-dot text-blue-400"></i>
+                                Karnataka, India · On-site
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div id="services" class="mt-10 sm:mt-20 lg:mt-32 scroll-mt-20">
+
+
+
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-gears text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">SERVICES</h1>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
+                        My <span class="text-violet-600">Services</span>
+                    </h2>
+
+                    <div class="flex flex-col sm:flex-row sm:gap-8">
+
+                        <div class="grid md:grid-cols-2 gap-8">
+
+                            <div
+                                class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-600">
+                                <!-- <i class="fas fa-code text-6xl text-violet-600 mr-6"></i> -->
+                                <img src="./img/Web4.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                                <div class="group w-full ml-3">
+                                    <h2 class="text-xl font-bold mb-4">Web Development</h2>
+                                    <p class="text-gray-400">Creating responsive and interactive websites using HTML,
+                                        CSS, JavaScript, and React.js. Focus on modern UI/UX and cross-browser
+                                        compatibility.</p>
+                                </div>
+                            </div>
+
+
+                            <div
+                                class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-600">
+                                <!-- <i class="fas fa-mobile-alt text-6xl text-blue-400 mr-6"></i> -->
+                                <img src="./img/MobileDev.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                                <div class="group w-full ml-3">
+                                    <h2 class="text-xl font-bold mb-4">Mobile App Development</h2>
+                                    <p class="text-gray-400">Building user-friendly cross-platform mobile applications
+                                        using React Native. Delivering seamless experiences on both iOS and Android.</p>
+                                </div>
+                            </div>
+
+
+                            <div
+                                class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-600">
+                                <!-- <i class="fas fa-server text-6xl text-yellow-400 mr-6"></i> -->
+                                <img src="./img/API.png" alt="React Logo" class="h-24 w-24 object-contain">
+
+                                <div class="group w-full ml-3">
+                                    <h2 class="text-xl font-bold mb-4">Backend Development</h2>
+                                    <p class="text-gray-400">Developing robust server-side applications using Node.js
+                                        and Java. Ensuring scalability, security, and optimized database management.</p>
+                                </div>
+                            </div>
+
+
+                            <div
+                                class="p-5 border-amber-50 border-2 rounded-3xl shadow-xl flex items-center hover:border-violet-600">
+                                <!-- <i class="fas fa-paint-brush text-6xl text-pink-400 mr-6"></i> -->
+                                <img src="./img/DesignDev.png" alt="React Logo" class="h-24 w-24 object-contain">
+                                <div class="group w-full ml-3">
+                                    <h2 class="text-xl font-bold mb-4">Branding & Marketing Design</h2>
+                                    <p class="text-gray-400">Designing engaging visuals using Canva and Figma for
+                                        branding, marketing campaigns, and social media promotion. Enhancing brand
+                                        identity through creative content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="skills" class="mt-10 sm:mt-20 lg:mt-32 scroll-mt-20">
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-shapes text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">SKILLS</h1>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
+                        My <span class="text-violet-600">Advantages</span>
+                    </h2>
+
+                    <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/html-logo.png" alt="HTML Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">HTML</p>
+                        </div>
+
+
+
+
+
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/css-logo.png" alt="CSS Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">CSS</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Tailwind CSS.png" alt="CSS Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Tailwind</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Bootstrap.png" alt="CSS Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Bootstrap</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/NewJavaScript-logo.png" alt="JavaScript Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">JavaScript</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/react-logo.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">ReactJS</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/material-ui-logo.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Material UI</p>
+                        </div>
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Node.js.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Node Js</p>
+                        </div>
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Redux.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Redux</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/TypeScript.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">TypeScript</p>
+                        </div>
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/java-logo.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Java</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/mysql-logo.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">MySQL</p>
+                        </div>
+                    </div>
+
+
+
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide py-2">
+                        Essential <span class="text-violet-600">Tools</span>
+                    </h2>
+
+                    <div class="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-7 xl:grid-cols-7 gap-6 mt-5 ">
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/vs-code-logo.png" alt="VS Code"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">VS Cose</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Vite.js.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Vite</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/NPM.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">NPM</p>
+                        </div>
+
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/Postman.png" alt="Postman"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Postman</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/IntelliJ IDEA.png" alt="CSS Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">IntelliJ</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/atlassian-logo.png" alt="CSS Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Atlassian</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/icons8-github-512.png" alt="GitHub"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">GitHub</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/BitBucket.png" alt="Bitbucket"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Bitbucket</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/icons8-canva-1000.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Canva</p>
+                        </div>
+                        <div class="flex flex-col items-center group">
+                            <img src="./img/figma-logo.png" alt="React Logo"
+                                class="h-24 w-24 object-cover border-2 hover:border-violet-600 p-3 rounded-3xl hover:bg-white transition-all duration-500 transform group-hover:animate-[rotate_0.8s_ease-in-out_forwards] cursor-pointer">
+                            <p class="mt-2 text-lg font-semibold">Figma</p>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div id="project" class="mt-10 sm:mt-20 lg:mt-32 scroll-mt-20">
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-briefcase text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">PROJECTS</h1>
+                    </div>
+
+
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide">
+                        My Recent <span class="text-violet-600">Projects</span>
+                    </h2>
+
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+
+                        <div>
+                            <div class="bg-blue-950 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://people-pro.netlify.app/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/PeoplePro" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/people-pro.webp" alt="people-pro"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Material-UI</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Node
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Express
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">MySQL</span>
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://people-pro.netlify.app/" target="_blank">People-Pro HR Management </a>
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <div class="bg-sky-200 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://insurancedekho.netlify.app/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/insurancedekho" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600 transition">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/insurancedekho.webp" alt="insurancedekho"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
+                                        Bootstrap</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Node
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Express
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">MongoDB</span>
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://insurancedekho.netlify.app/" target="_blank">InsuranceDekho
+                                </a>
+                            </p>
+                        </div>
+
+
+
+                        <div>
+                            <div class="bg-blue-400 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://smart-watch-showcase-sharan-hbd.netlify.app/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/smart_watch_showcase" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/smart-watch-showcase.webp" alt="people-pro"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
+                                        CSS
+                                    </span>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://smart-watch-showcase-sharan-hbd.netlify.app/"
+                                    target="_blank">Smart-Watch
+                                    Showcase </a>
+                            </p>
+                        </div>
+
+
+                        <div>
+                            <div class="bg-gray-200 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://www.travercel.com/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/travercel.webp" alt="people-pro"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
+                                        CSS
+                                    </span>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://www.travercel.com/" target="_blank">Travercel Website </a>
+                            </p>
+                        </div>
+
+
+
+
+
+
+                        <div>
+                            <div class="bg-gray-50 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://nextiqz.in/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/nextiqz.webp" alt="people-pro"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">HTML</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Tailwind
+                                        CSS
+                                    </span>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://nextiqz.in/" target="_blank">NextIQz Website </a>
+                            </p>
+                        </div>
+
+
+
+                        <div>
+                            <div class="bg-gray-900 rounded-3xl  relative w-full max-w-md flex flex-col gap-4 group">
+
+
+                                <a href="https://sharanhbdmovieshub.netlify.app/" target="_blank"
+                                    class="absolute top-4 left-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-solid fa-link text-lg"></i>
+                                </a>
+
+
+                                <a href="https://github.com/SharanappaM/Movies_hub" target="_blank"
+                                    class="absolute top-4 right-4 bg-white text-black p-2 px-3 rounded-2xl cursor-pointer shadow-lg hover:text-violet-600">
+                                    <i class="fa-brands fa-github text-xl"></i>
+                                </a>
+
+
+                                <div class="mt-16 flex justify-center">
+                                    <img src="./img/project-images/movieshub.webp" alt="people-pro"
+                                        class="rounded-2xl shadow-lg w-3/4 h-auto object-cover">
+                                </div>
+
+
+                                <div class="flex flex-wrap gap-3 pl-4 pb-4">
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">React
+                                        js</span>
+                                    <span
+                                        class="bg-white text-black px-4 py-2 rounded-full text-sm font-semibold group-hover:bg-black group-hover:text-white transition duration-300">Bootstrap
+                                    </span>
+
+
+                                </div>
+
+
+
+                            </div>
+                            <p class="text-2xl hover:underline m-5">
+                                <a href="https://sharanhbdmovieshub.netlify.app/" target="_blank">Movies Hub </a>
+                            </p>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="flex justify-center mt-6">
+                        <a href="https://github.com/SharanappaM?tab=repositories" target="_blank"
+                            class="cursor-pointer relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-purple-600 transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]">
+                            <div class="absolute flex px-1 py-0.5 justify-start items-center inset-0">
+                                <div
+                                    class="w-[0%] group-hover:w-full transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
+                                </div>
+                                <div
+                                    class="rounded-full shrink-0 flex justify-center items-center shadow-[inset_1px_-1px_3px_0_black] h-full aspect-square bg-purple-600  transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] group-hover:bg-black">
+                                    <div
+                                        class="size-[0.8rem] text-black group-hover:text-white group-hover:-rotate-45 transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                            height="100%" width="100%">
+                                            <path fill="currentColor"
+                                                d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="pl-[3.4rem] pr-[1.1rem] group-hover:pl-[1.1rem] group-hover:pr-[3.4rem] transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]  text-white">
+                                View more
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+
+                <div id="blogs" class="mt-10 sm:mt-20 lg:mt-20 scroll-mt-20">
+
+                    <div class="flex items-center gap-2 w-fit mx-auto sm:mx-0 px-4 py-1 border-2 rounded-full">
+                        <i class="fa-solid fa-briefcase text-sm"></i>
+                        <h1 class="text-xs font-medium tracking-wider">BLOGS</h1>
+                    </div>
+
+
+                    <h2 class="text-2xl sm:text-4xl font-semibold mt-5 mb-5 tracking-wide">
+                        My Recent <span class="text-violet-600">Blogs</span>
+                    </h2>
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+
+
+                        <a href="https://dev.to/sharanappa_m/deploying-a-nodejs-project-with-mysql-on-railway-2k7n"
+                            target="_blank"
+                            class="max-w-lg bg-black border-amber-50 border-2 hover:border-violet-600 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <img src="./img/Blog11.webp" alt="Blog Cover" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
+                                    Deploying a Node.js Project with MySQL on Railway
+                                </h3>
+                                <p class="text-gray-300 text-sm mb-4">
+                                    Deploy and host your Node.js project seamlessly on Railway with built-in MySQL
+                                    support.Easily connect your app to a MySQL database using Railway's environment
+                                    variables.
+                                    Perfect for full-stack applications, with minimal setup and continuous deployment
+                                    features.
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">Sharanappa</p>
+                                        <p class="text-gray-300 text-xs">📅 Posted on Apr 19, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="https://dev.to/sharanappa_m/how-to-set-up-tailwind-css-v4-using-tailwind-cli-1481"
+                            target="_blank"
+                            class="max-w-lg bg-black border-amber-50 border-2 hover:border-violet-600 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <img src="./img/Blog2.webp" alt="Blog Cover" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
+                                    How to Set Up Tailwind CSS v4 Using Tailwind CLI
+                                </h3>
+                                <p class="text-gray-300 text-sm mb-4">
+                                    Tailwind CSS v4 is a powerful utility-first CSS framework that helps you rapidly
+                                    build
+                                    custom designs.
+                                    If you're looking to set up Tailwind CSS v4 using the Tailwind CLI, this guide walks
+                                    you
+                                    through every step.
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">Sharanappa</p>
+                                        <p class="text-gray-300 text-xs">📅 Posted on Mar 6, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="https://dev.to/sharanappa_m/understanding-react-router-a-step-by-step-guide-for-beginners-38hk"
+                            target="_blank"
+                            class="max-w-md bg-black border-amber-50 border-2 hover:border-violet-600 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                            <img src="./img/Blog3.webp" alt="Blog Cover" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
+                                    Understanding React Router: A Step-by-Step Guide for Beginners
+                                </h3>
+                                <p class="text-gray-300 text-sm mb-4">
+                                    React Router is a popular library for handling navigation in React applications. It
+                                    enables single-page applications (SPAs) with dynamic routing for seamless UX.
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">Sharanappa</p>
+                                        <p class="text-gray-300 text-xs">📅 Posted on Dec 21, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="https://dev.to/sharanappa_m/unlocking-es6-essential-features-every-developer-should-know-2ge"
+                            target="_blank"
+                            class="max-w-md bg-black border-amber-50 border-2 hover:border-violet-600 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition duration-300">
+                            <img src="./img/Blog1.webp" alt="Blog Cover" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-semibold mb-2 text-white hover:underline">
+                                    Unlocking ES6 — Essential Features Every Developer Should Know
+                                </h3>
+                                <p class="text-gray-300 text-sm mb-4">
+                                    ES6 introduced powerful features that revolutionized JavaScript. Learn the must-know
+                                    improvements like arrow functions, let/const, template literals, and more.
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="./img/WhatsApp Image 2025-03-20 at 22.49.15_bae6259f.jpg" alt="Sharanappa"
+                                        class="w-10 h-10 rounded-full object-cover">
+                                    <div>
+                                        <p class="text-sm font-medium text-white">Sharanappa</p>
+                                        <p class="text-gray-300 text-xs">📅 Posted on Dec 8, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+
+                    <div class="flex justify-center mt-6">
+                        <a href="https://dev.to/sharanappa_m" target="_blank"
+                            class="cursor-pointer relative bg-white/10 py-2 rounded-full min-w-[8.5rem] min-h-[2.92rem] group max-w-full flex items-center justify-start hover:bg-purple-600 transition-all duration-[0.8s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] shadow-[inset_1px_2px_5px_#00000080]">
+                            <div class="absolute flex px-1 py-0.5 justify-start items-center inset-0">
+                                <div
+                                    class="w-[0%] group-hover:w-full transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
+                                </div>
+                                <div
+                                    class="rounded-full shrink-0 flex justify-center items-center shadow-[inset_1px_-1px_3px_0_black] h-full aspect-square bg-purple-600  transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)] group-hover:bg-black">
+                                    <div
+                                        class="size-[0.8rem] text-black group-hover:text-white group-hover:-rotate-45 transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16"
+                                            height="100%" width="100%">
+                                            <path fill="currentColor"
+                                                d="M12.175 9H0V7H12.175L6.575 1.4L8 0L16 8L8 16L6.575 14.6L12.175 9Z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="pl-[3.4rem] pr-[1.1rem] group-hover:pl-[1.1rem] group-hover:pr-[3.4rem] transition-all duration-[1s] ease-[cubic-bezier(0.510,0.026,0.368,1.016)]  text-white">
+                                View more
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div id="contact" class="py-20 scroll-mt-20">
+                    <div
+                        class="grid sm:grid-cols-2 gap-14 mx-auto max-w-6xl  rounded-2xl shadow-[0_0_20px_rgba(0,0,0,0.4)] text-white font-[sans-serif] ">
+
+                        <div class="space-y-6">
+
+                            <div>
+                                <h1 class="text-4xl font-bold text-white mb-2">Get in Touch</h1>
+                                <div class="w-12 h-1 bg-violet-600 rounded-full"></div>
+                            </div>
+
+
+                            <p class="text-gray-400 text-base leading-relaxed">
+                                Have an exciting project or idea? We'd love to hear from you and explore how we can
+                                collaborate to bring your vision to life.
+                            </p>
+
+
+                            <div class="space-y-5 pt-4">
+
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
+                                        <i class="fas fa-envelope text-violet-600 text-lg"></i>
+                                    </div>
+                                    <div class="text-sm text-gray-300">
+                                        <p class="font-medium text-white">Email</p>
+                                        <a href="mailto:hbdsharanappa52@gmail.com">hbdsharanappa52@gmail.com</a>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
+                                        <i class="fas fa-phone-alt text-violet-600 text-lg"></i>
+                                    </div>
+                                    <div class="text-sm text-gray-300">
+                                        <p class="font-medium text-white">Phone</p>
+                                        <a href="tel:9742595070">+91 9742595070</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div
+                                        class="w-10 h-10 flex items-center justify-center bg-violet-600 bg-opacity-20 rounded-full">
+                                        <i class="fas fa-map-marker-alt text-violet-600 text-lg"></i>
+                                    </div>
+                                    <div class="text-sm text-gray-300">
+                                        <p class="font-medium text-white">Location</p>
+                                        <p>Nagawara, Bangalore, KA, IN</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="contact-form" class="space-y-5" action="https://api.web3forms.com/submit"
+                            method="POST">
+                            <input type="hidden" name="access_key" value="2ec66f12-a3e5-447c-8253-34ae892bc139s">
+
+                            <input type="text" placeholder="Your Name" name="name" required
+                                class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
+
+                            <input type="email" placeholder="Your Email" name="email" required
+                                class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
+
+                            <input type="text" placeholder="Subject" name="message" required
+                                class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150" />
+
+                            <textarea type="text" placeholder="Your Message" rows="5" name="email_subject"
+                                class="w-full bg-[#2c2c2c] text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-[#007bff] transition duration-150"></textarea>
+
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <button type="submit"
+                                class="w-full bg-violet-600 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg text-sm transition-all duration-200">
+                                Send Message
+                            </button>
+
+
+
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+
+                <div id="popup-modal"
+                    class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+                    <div class="bg-[#1e1e1e] text-white p-6 rounded-xl shadow-xl w-full max-w-sm text-center">
+                        <div class="text-3xl mb-2">✅</div>
+                        <h2 class="text-xl font-semibold mb-2">Message Sent!</h2>
+                        <p class="text-gray-400 text-sm mb-4">Thank you for reaching out. I’ll get back to you soon!</p>
+                        <button onclick="closePopup()"
+                            class="mt-2 px-4 py-2 bg-violet-600 hover:bg-blue-600 text-white rounded-md text-sm transition duration-150">
+                            Close
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
 
         <div class="p-5 fixed right-0 mt-10 flex-col items-center border-2 rounded-full mr-5 flex md:hidden"
             id="menuToggle">
@@ -1095,11 +1127,11 @@
 
 
         <div
-            class="w-16 border-2 border-white p-6 fixed right-0 top-1/2 -translate-y-1/2 flex flex-col items-center  rounded-full  hidden md:flex mr-16">
+            class="w-16 border-2 border-white p-6 fixed right-0 top-1/2 -translate-y-1/2 flex flex-col items-center  rounded-full  hidden md:flex mr-12">
 
             <ul class="space-y-8 text-lg text-gray-400">
                 <li class="relative group">
-                    <a href="#home" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#home" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-house"></i>
                     </a>
                     <span
@@ -1108,7 +1140,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#about" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#about" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-user"></i>
                     </a>
                     <span
@@ -1117,7 +1149,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#resume" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#experience" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-briefcase"></i>
                     </a>
                     <span
@@ -1126,7 +1158,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#services" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#education" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </a>
                     <span
@@ -1135,7 +1167,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#skills" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#services" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-gears"></i>
                     </a>
                     <span
@@ -1144,7 +1176,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#projects" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#skills" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-shapes"></i>
 
                     </a>
@@ -1154,7 +1186,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#contact" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#project" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <!-- <i class="fa-solid fa-envelope"></i> -->
                         <i class="fa-solid fa-list-check"></i>
                     </a>
@@ -1164,7 +1196,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#contact" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#blogs" class="hover:text-violet-600 transition duration-300 cursor-pointer">
 
                         <i class="fa-solid fa-newspaper"></i>
                     </a>
@@ -1174,7 +1206,7 @@
                     </span>
                 </li>
                 <li class="relative group">
-                    <a href="#contact" class="hover:text-violet-500 transition duration-300 cursor-pointer">
+                    <a href="#contact" class="hover:text-violet-600 transition duration-300 cursor-pointer">
                         <i class="fa-solid fa-envelope"></i>
                     </a>
                     <span
@@ -1192,7 +1224,8 @@
 
 
 
-    <div id="drawer" class="drawer  fixed top-0 left-0 h-full w-72 bg-gray-900/80 backdrop-blur-xl text-white z-50 shadow-2xl border-r border-indigo-500/30 flex flex-col justify-between transition-all duration-300 rounded-r-2xl">
+    <div id="drawer"
+        class="drawer  fixed top-0 left-0 h-full w-72 bg-gray-900/80 backdrop-blur-xl text-white z-50 shadow-2xl border-r border-indigo-500/30 flex flex-col justify-between transition-all duration-300 rounded-r-2xl">
 
 
         <div>
@@ -1234,17 +1267,17 @@
                     <li
                         class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
                         <i class="fa-solid fa-shapes text-indigo-400 group-hover:text-white text-lg"></i>
-                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Skills</a>
+                        <a href="#skills" class="text-gray-300 group-hover:text-white font-medium">Skills</a>
                     </li>
                     <li
                         class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
                         <i class="fa-solid fa-list-check text-indigo-400 group-hover:text-white text-lg"></i>
-                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Projects</a>
+                        <a href="#project" class="text-gray-300 group-hover:text-white font-medium">Projects</a>
                     </li>
                     <li
                         class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
                         <i class="fa-solid fa-newspaper text-indigo-400 group-hover:text-white text-lg"></i>
-                        <a href="#contact" class="text-gray-300 group-hover:text-white font-medium">Blogs</a>
+                        <a href="#blogs" class="text-gray-300 group-hover:text-white font-medium">Blogs</a>
                     </li>
                     <li
                         class="group hover:bg-indigo-500/20 px-4 py-3 rounded-lg flex items-center space-x-4 transition-all duration-300 cursor-pointer">
@@ -1264,19 +1297,20 @@
 
         <div class="p-4 border-t border-white/10">
             <div class="flex gap-4 justify-center">
-                <a href="#"
+                <a href="https://www.linkedin.com/in/sharanappab/" target="_blank"
                     class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
                     <i class="fa-brands fa-linkedin text-gray-300 hover:text-indigo-400 text-lg"></i>
+                    
                 </a>
-                <a href="#"
+                  <a href="https://github.com/sharanappaM/" target="_blank"
                     class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
                     <i class="fa-brands fa-github text-gray-300 hover:text-indigo-400 text-lg"></i>
                 </a>
-                <a href="#"
+                 <a href="https://x.com/sharan_hbd" target="_blank"
                     class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
-                    <i class="fa-brands fa-twitter text-gray-300 hover:text-indigo-400 text-lg"></i>
+                    <i class="fa-brands fa-x-twitter text-gray-300 hover:text-indigo-400 text-lg"></i>
                 </a>
-                <a href="#"
+               <a href="https://wa.link/r4s6df" target="_blank"
                     class="w-10 h-10 flex items-center justify-center border border-gray-400 rounded-full hover:border-indigo-500 hover:bg-indigo-500/10 transition-all">
                     <i class="fa-brands fa-whatsapp text-gray-300 hover:text-indigo-400 text-lg"></i>
                 </a>
